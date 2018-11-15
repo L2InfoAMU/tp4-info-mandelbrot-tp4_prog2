@@ -150,4 +150,11 @@ public class ComplexTest {
     void testMultiply(){
         assertEquals(Complex.ZERO, Complex.ZERO.multiply(Complex.ONE));
     }
+
+    @Test
+    void testSquaredModulus(){
+        assertEquals(0, Complex.ZERO.squaredModulus());
+        assertEquals(2, onePlusI.squaredModulus());
+        assertEquals(1, Complex.ONE.squaredModulus());
+    }
 }
