@@ -139,4 +139,10 @@ public class ComplexTest {
         assertEquals(2, two.real);
         assertEquals(0, two.imaginary);
     }
+
+    @Test
+    void testAdd(){
+        assertEquals(Complex.ONE, onePlusI.add(minusI));
+        assertEquals(onePlusI, Complex.ONE.add(Complex.I));
+    }
 }
