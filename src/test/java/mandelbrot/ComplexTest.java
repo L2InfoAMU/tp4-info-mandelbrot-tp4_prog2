@@ -170,4 +170,11 @@ public class ComplexTest {
         assertEquals(two, Complex.ONE.scale(2));
         assertEquals(twoI, Complex.I.scale(2));
     }
+
+    @Test
+    void testEquals(){
+        assertEquals(two, two);
+        assertEquals(Complex.ONE, Complex.ONE);
+        assertEquals(minusI, Complex.I.negate());
+    }
 }
