@@ -177,4 +177,9 @@ public class ComplexTest {
         assertEquals(Complex.ONE, Complex.ONE);
         assertEquals(minusI, Complex.I.negate());
     }
+
+    @Test
+    void testPow(){
+        assertEquals(Complex.ZERO, Complex.ZERO.pow(3));
+    }
 }
